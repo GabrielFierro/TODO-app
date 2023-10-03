@@ -21,6 +21,11 @@ function App() {
     setCountTask(countTask - 1);
   };
 
+  const handleDeleteAllTask = () => {
+    setTaskList([]);
+    setCountTask(0);
+  };
+
   return (
     <div className='container'>
       <h1>Todo App</h1>
@@ -36,7 +41,19 @@ function App() {
         </button>
       </div>
       <div className='container-task'>
-        <p>{countTask === 1 ? `${countTask} task` : `${countTask} tasks`}</p>
+        <header>
+          <p>{countTask === 1 ? `${countTask} task` : `${countTask} tasks`}</p>
+          <button
+            className='button-delete'
+            role='button'
+            onClick={handleDeleteAllTask}>
+            Delete All Tasks
+            <FontAwesomeIcon
+              icon={faTrash as IconProp}
+              style={{ marginLeft: '10px', color: '#ffffff' }}
+            />
+          </button>
+        </header>
         {taskList.map((task, index) => (
           <ul key={index}>
             <li className='task'>

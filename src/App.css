@@ -10,14 +10,7 @@ body {
   align-content: center;
   justify-content: center;
   font-family: 'Rubik', sans-serif;
-}
-
-h1 {
   text-align: center;
-}
-
-span {
-  font-weight: 400;
 }
 
 input {
@@ -41,12 +34,6 @@ ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
-
-.container-add-task {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
 }
 
 .container-task {
@@ -77,7 +64,6 @@ ul {
   align-items: center;
   justify-content: space-between;
   padding: 10px 0px;
-  color: #161616;
   animation: mover 0.5s ease-out;
 }
 
@@ -98,26 +84,17 @@ ul {
 }
 
 .button-add {
-  appearance: none;
   background-color: #00c297;
   border: 1px solid rgba(27, 31, 35, 0.15);
   border-radius: 6px;
   box-shadow: rgba(27, 31, 35, 0.1) 0 1px 0;
-  box-sizing: border-box;
   color: #fff;
   cursor: pointer;
-  display: inline-block;
   font-size: 14px;
   font-weight: 600;
   line-height: 20px;
   padding: 6px 16px;
-  position: relative;
   text-align: center;
-  text-decoration: none;
-  user-select: none;
-  touch-action: manipulation;
-  vertical-align: middle;
-  white-space: nowrap;
 }
 
 .button-add:hover {
@@ -125,47 +102,26 @@ ul {
 }
 
 .button-delete {
-  appearance: none;
   background-color: #e03333;
   border: 1px solid rgba(27, 31, 35, 0.15);
   border-radius: 6px;
   box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0,
     rgba(255, 255, 255, 0.25) 0 1px 0 inset;
-  box-sizing: border-box;
   color: #fff;
   cursor: pointer;
-  display: inline-block;
   font-size: 14px;
   font-weight: 500;
   line-height: 15px;
-  list-style: none;
   padding: 8px 16px;
-  position: relative;
-  user-select: none;
-  touch-action: manipulation;
-  vertical-align: middle;
-  white-space: nowrap;
-  word-wrap: break-word;
   max-height: 35px;
 }
 
 .button-delete-icon {
-  appearance: none;
-  box-sizing: border-box;
   cursor: pointer;
-  display: inline-block;
   font-size: 16px;
   font-weight: 500;
   line-height: 20px;
-  list-style: none;
   padding: 6px 16px;
-  position: relative;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  vertical-align: middle;
-  white-space: nowrap;
-  word-wrap: break-word;
   max-height: 35px;
 }
 

@@ -10,10 +10,17 @@ body {
   flex-wrap: nowrap;
   align-content: center;
   justify-content: center;
+  font-family: 'Rubik', sans-serif;
 }
 
 h1 {
   text-align: center;
+}
+
+h1,
+p,
+span {
+  font-weight: 400;
 }
 
 input {
@@ -24,7 +31,7 @@ input {
   box-shadow: 2px 2px 7px 0 rgb(0, 0, 0, 0.2);
   font-size: 14px;
   outline: none;
-  color: dimgray;
+  color: rgb(49, 49, 49);
 }
 
 input:invalid {
@@ -50,6 +57,12 @@ input:invalid {
   }
 }
 
+.container-search {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .container-add-task {
   display: flex;
   flex-wrap: wrap;
@@ -60,8 +73,15 @@ input:invalid {
   margin-top: 10px;
   border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  padding: 10px;
-  width: 400px;
+  width: 450px;
+}
+
+.container-task > p {
+  text-align: center;
+  padding: 12px;
+  color: #00c297;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .task {
@@ -69,18 +89,19 @@ input:invalid {
   align-items: center;
   justify-content: space-between;
   margin: 10px;
-  padding: 10px;
+  padding: 15px;
   color: #161616;
 }
 
-.task span {
+.task > span {
   display: flex;
   align-items: center;
+  line-height: 25px;
 }
 
 .button-add {
   appearance: none;
-  background-color: #2ea44f;
+  background-color: #00c297;
   border: 1px solid rgba(27, 31, 35, 0.15);
   border-radius: 6px;
   box-shadow: rgba(27, 31, 35, 0.1) 0 1px 0;
@@ -105,7 +126,7 @@ input:invalid {
 }
 
 .button-add:hover {
-  background-color: #2c974b;
+  background-color: rgb(2, 167, 131);
 }
 
 .button-delete {

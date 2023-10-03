@@ -63,16 +63,13 @@ function App() {
           <ul key={index}>
             <li className='task'>
               <span>{task}</span>
-              <button
-                className='button-delete'
-                role='button'
-                onClick={() => handleDeleteTask(index)}>
-                Delete
-                <FontAwesomeIcon
-                  icon={faTrash as IconProp}
-                  style={{ marginLeft: '10px', color: '#ffffff' }}
-                />
-              </button>
+              <FontAwesomeIcon
+                className='button-delete-icon'
+                role='icon'
+                onClick={() => handleDeleteTask(index)}
+                icon={faTrash as IconProp}
+                style={{ marginLeft: '10px', color: '#E30D0D' }}
+              />
             </li>
           </ul>
         ))}

@@ -31,29 +31,6 @@ input {
   color: rgb(49, 49, 49);
 }
 
-input:invalid {
-  animation: justshake 0.3s forwards;
-  color: red;
-}
-
-@keyframes justshake {
-  25% {
-    transform: translateX(5px);
-  }
-
-  50% {
-    transform: translateX(-5px);
-  }
-
-  75% {
-    transform: translateX(5px);
-  }
-
-  100% {
-    transform: translateX-(5px);
-  }
-}
-
 ul {
   list-style-type: none;
   margin: 20px;
@@ -161,8 +138,6 @@ ul {
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-family: -apple-system, system-ui, 'Segoe UI', Helvetica, Arial,
-    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
@@ -177,6 +152,42 @@ ul {
   white-space: nowrap;
   word-wrap: break-word;
   max-height: 35px;
+}
+
+.button-delete-icon {
+  appearance: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  padding: 6px 16px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  word-wrap: break-word;
+  max-height: 35px;
+}
+
+.button-delete-icon:hover {
+  animation: delete 1s ease-out;
+}
+
+@keyframes delete {
+  0% {
+    transform: rotate(35deg);
+  }
+  50% {
+    transform: rotate(-35deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 .button-delete:hover {

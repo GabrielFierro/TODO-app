@@ -21,7 +21,7 @@ function App() {
 
   const handleDeleteTask = (index: number) => {
     // Control when the user wants to delete a task
-    setTaskList((tasks) => tasks.filter((value, i) => i != index)); // Use filter to search the task to delete with the index of the element to search
+    setTaskList((tasks) => tasks.filter((_, i) => i != index)); // Use filter to search the task to delete with the index of the element to search
     setCountTask(countTask - 1); // Decrement the counter of tasks
   };
 

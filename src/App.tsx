@@ -36,21 +36,23 @@ function App() {
         </button>
       </div>
       <div className='container-task'>
-        <p>{countTask} Tasks</p>
+        <p>{countTask === 1 ? `${countTask} task` : `${countTask} tasks`}</p>
         {taskList.map((task, index) => (
-          <div className='task' key={index}>
-            <span>{task}</span>
-            <button
-              className='button-delete'
-              role='button'
-              onClick={() => handleDeleteTask(index)}>
-              Delete
-              <FontAwesomeIcon
-                icon={faTrash as IconProp}
-                style={{ marginLeft: '10px', color: '#e30d0d' }}
-              />
-            </button>
-          </div>
+          <ul className='task' key={index}>
+            <li>
+              <span>{task}</span>
+              <button
+                className='button-delete'
+                role='button'
+                onClick={() => handleDeleteTask(index)}>
+                Delete
+                <FontAwesomeIcon
+                  icon={faTrash as IconProp}
+                  style={{ marginLeft: '10px', color: '#e30d0d' }}
+                />
+              </button>
+            </li>
+          </ul>
         ))}
       </div>
     </div>

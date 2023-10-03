@@ -7,17 +7,24 @@ import './App.css';
 function App() {
   const [newTask, setNewTask] = useState<string>('');
   const [taskList, setTaskList] = useState<string[]>([]);
+  const [countTask, setCountTask] = useState<number>(0);
 
   const handleAddTask = () => {
     if (newTask.trim() === '') return;
     setTaskList((doneTask) => [...doneTask, newTask]);
+    setCountTask(countTask + 1);
     setNewTask('');
+  };
+
+  const handleDeleteTask = (index: number) => {
+    setTaskList((tasks) => tasks.filter((value, i) => i != index));
+    setCountTask(countTask - 1);
   };
 
   return (
     <div className='container'>
       <h1>Todo App</h1>
-      <div>
+      <div className='container-search'>
         <input
           type='text'
           value={newTask}
@@ -25,14 +32,18 @@ function App() {
           placeholder='Add a new task...'
         />
         <button className='button-add' role='button' onClick={handleAddTask}>
-          ADD
+          + Add a Task
         </button>
       </div>
       <div className='container-task'>
+        <p>{countTask} Tasks</p>
         {taskList.map((task, index) => (
           <div className='task' key={index}>
             <span>{task}</span>
-            <button className='button-delete' role='button'>
+            <button
+              className='button-delete'
+              role='button'
+              onClick={() => handleDeleteTask(index)}>
               Delete
               <FontAwesomeIcon
                 icon={faTrash as IconProp}

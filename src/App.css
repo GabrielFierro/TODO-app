@@ -133,13 +133,13 @@ ul {
 
 .button-delete {
   appearance: none;
-  background-color: #fafbfc;
+  background-color: #e03333;
   border: 1px solid rgba(27, 31, 35, 0.15);
   border-radius: 6px;
   box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0,
     rgba(255, 255, 255, 0.25) 0 1px 0 inset;
   box-sizing: border-box;
-  color: #24292e;
+  color: #fff;
   cursor: pointer;
   display: inline-block;
   font-family: -apple-system, system-ui, 'Segoe UI', Helvetica, Arial,
@@ -161,7 +161,7 @@ ul {
 }
 
 .button-delete:hover {
-  background-color: #f3f4f6;
+  background-color: #e30d0d;
   text-decoration: none;
   transition-duration: 0.1s;
 }

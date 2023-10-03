@@ -48,7 +48,7 @@ function App() {
                 Delete
                 <FontAwesomeIcon
                   icon={faTrash as IconProp}
-                  style={{ marginLeft: '10px', color: '#e30d0d' }}
+                  style={{ marginLeft: '10px', color: '#ffffff' }}
                 />
               </button>
             </li>

@@ -38,8 +38,8 @@ function App() {
       <div className='container-task'>
         <p>{countTask === 1 ? `${countTask} task` : `${countTask} tasks`}</p>
         {taskList.map((task, index) => (
-          <ul className='task' key={index}>
-            <li>
+          <ul key={index}>
+            <li className='task'>
               <span>{task}</span>
               <button
                 className='button-delete'

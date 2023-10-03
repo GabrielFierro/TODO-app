@@ -21,7 +21,7 @@ span {
 }
 
 input {
-  min-width: 300px;
+  width: 300px;
   padding: 12px;
   border: none;
   border-radius: 4px;
@@ -54,6 +54,12 @@ input:invalid {
   }
 }
 
+ul {
+  list-style-type: none;
+  margin: 20px;
+  padding: 0;
+}
+
 .container-search {
   display: flex;
   flex-direction: row;
@@ -84,14 +90,14 @@ input:invalid {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 20px;
+  padding: 10px 0px;
   color: #161616;
-  margin-bottom: 15px;
 }
 
 .task > span {
   display: flex;
   align-items: center;
+  max-width: 300px;
   line-height: 25px;
 }
 
@@ -158,4 +164,27 @@ input:invalid {
   background-color: #f3f4f6;
   text-decoration: none;
   transition-duration: 0.1s;
+}
+
+/* Responsive */
+
+@media (max-width: 600px) {
+  input {
+    width: 200px;
+    margin: 12px;
+  }
+
+  .container-search {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-task {
+    width: 300px;
+  }
+
+  .task > span {
+    max-width: 150px;
+    line-height: 20px;
+  }
 }

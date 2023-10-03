@@ -107,8 +107,6 @@ ul {
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-family: -apple-system, system-ui, 'Segoe UI', Helvetica, Arial,
-    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
   font-size: 14px;
   font-weight: 600;
   line-height: 20px;
@@ -117,7 +115,6 @@ ul {
   text-align: center;
   text-decoration: none;
   user-select: none;
-  -webkit-user-select: none;
   touch-action: manipulation;
   vertical-align: middle;
   white-space: nowrap;
@@ -140,13 +137,11 @@ ul {
   display: inline-block;
   font-size: 14px;
   font-weight: 500;
-  line-height: 20px;
+  line-height: 15px;
   list-style: none;
-  padding: 6px 16px;
+  padding: 8px 16px;
   position: relative;
-  transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
   user-select: none;
-  -webkit-user-select: none;
   touch-action: manipulation;
   vertical-align: middle;
   white-space: nowrap;

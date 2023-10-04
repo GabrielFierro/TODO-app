@@ -73,6 +73,9 @@ function App() {
             </li>
           </ul>
         ))}
+        <footer>
+          <p>Drag and Drop to reorder list</p>
+        </footer>
       </div>
     </div>
   );

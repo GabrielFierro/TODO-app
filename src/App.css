@@ -26,8 +26,15 @@ input {
 
 ul {
   list-style-type: none;
-  margin: 20px;
   padding: 0;
+  margin: 0;
+}
+
+footer > p {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 5px;
 }
 
 .container-search {
@@ -49,6 +56,7 @@ ul {
   align-items: center;
   justify-content: space-between;
   padding: 5px 20px;
+  border-bottom: 1px solid #969696;
 }
 
 .container-task header > p {
@@ -63,8 +71,9 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 0px;
+  padding: 10px 30px;
   animation: mover 0.5s ease-out;
+  border-bottom: 1px solid #969696;
 }
 
 @keyframes mover {
